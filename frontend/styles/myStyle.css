@@ -1,0 +1,212 @@
+/* Index.html */
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbarContainer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.dropdown-style {
+    background-color: rgb(183, 196, 237);
+    padding: 15px;
+}
+
+.nav-item {
+    padding-left: 12px;
+    font-size: 24px;
+}
+
+
+.centerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+/* Manageproduct.html */
+.fixed-header {
+    position: fixed;
+    top: 70px;
+    padding-top: 15px;
+}
+
+.fixed-header h3 {
+    padding-bottom: 10px;
+    color: rgb(111, 8, 104);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.scrollable-content {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+
+/* Add Product */
+.form-container {
+    background-color: lightgray;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+#productForm {
+    width: 350px;
+}
+
+#productForm .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#productForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#productForm input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#productForm input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.footer-btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#message {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Add Order styles */
+#orderForm {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+#orderForm .form-group {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.add-to-cart-btn {
+    padding: 5px 20px;
+    white-space: nowrap;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+#orderForm .form-group textarea {
+    width: 300px;
+    height: 80px;
+    padding: 10px;
+    font-size: 10px;
+}
+
+#total_price_till_now {
+    background-color: lightpink;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Orderlist */
+.order-detail-div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcyan;
+    padding: 40px 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 50%;
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.order-detail-div .btn-close {
+    position: absolute;
+    background-color: red;
+    top: 10px;
+    right: 10px;
+}
+
+.order-details-scrollable {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.indentation{
+    display: flex;
+    justify-content: space-between;
+}

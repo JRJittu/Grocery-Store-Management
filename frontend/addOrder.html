@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link media="all" type="text/css" rel="stylesheet" href="./styles/myStyle.css" />
+</head>
+
+<body>
+    <div class="mainContainer">
+
+        <div class="navbarContainer">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-square-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-style">
+                            <li><a class="dropdown-item" href="./manageProducts.html">Manage Products</a></li>
+                            <li><a class="dropdown-item" href="./manageOrders.html">Manage Orders</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="centerDiv">
+            <div class="fixed-header">
+                <h3>Manage Orders</h3>
+                <h3 style="color: green; font-weight: bold;">Creating New Order</h3>
+            </div>
+
+            <div>
+
+                <div class="form-container">
+
+                    <form id="orderForm">
+
+                        <div class="form-group">
+                            <section style="font-weight: bold;">
+                                Name: <input placeholder="Enter Customer name" style="width: 300px;" id="customer_name"
+                                    name="name" type="text" required>
+                            </section>
+                            <section style="font-weight: bold;">
+                                Date: <p style="display: inline;" class="dateElement"></p>
+                            </section>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="selectProduct">
+
+                            </select>
+                            <select id="selectQuantity">
+                                <option value="">Select Quantity</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+
+                            <div id="item_qty_price"
+                                style="height: 30px; width: 500px; color: black;font-weight: bold; border: 1px solid black;border-radius: 10px;">
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="items_in_cart"></textarea>
+                            <p id="total_price_till_now">Grand Total - ₹0</p>
+                        </div>
+
+                    </form>
+                    <div class="footer-btn">
+                        <button type="button" class="btn btn-danger" id="orderClearBtn">Clear</button>
+                        <p id="message"></p>
+                        <button type="button" class="btn btn-success" id="saveOrder">Save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="./javaScript/jquery.js"></script>
+    <script src="./javaScript/common.js"></script>
+    <script src="./javaScript/addOrder.js"></script>
+
+</body>
+
+</html>
