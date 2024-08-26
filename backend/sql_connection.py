@@ -16,8 +16,8 @@ def get_sql_connection():
     if __connection is None:
         __connection = mysql.connector.connect(
             user='root',
-            password='JRJittu@777',
-            host='localhost',
+            password='jittu777',
+            host='aws-db-instances.cb68gm4e4w16.eu-north-1.rds.amazonaws.com',
             database='grocerystore'
         )
     
